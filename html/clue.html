@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>课表</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/title-white.css">
+		<link rel="stylesheet" href="../css/timetable.css">
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <div class="mui-title">
+		    	<div id="datePicker">
+		    		<button id="btnDate">18年4月23日-4月29日</button>
+		    		<a class="mui-icon mui-icon-arrowdown"></a>
+		    	</div>
+		    </div>
+			<a id="btn-add-title" href="#topPopover" class="mui-icon mui-icon-plusempty mui-pull-right"></a>			
+		</header>
+		<div class="mui-content">
+		    <!--右上角弹出菜单-->
+			<div id="topPopover" class="mui-popover">
+				<div class="mui-popover-arrow"></div>
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<a href="#">
+									<img class="mui-pull-left" src="../img/tx_ic_work_popup_menu_add_trainee.png"/>
+									<p class="popover-item mui-pull-left">添加课节</p>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">
+									<img class="mui-pull-left" src="../img/txe_ic_course_table_export.png"/>
+									<p class="popover-item mui-pull-left">导出课表</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="mui-row condition">
+			    <div class="mui-col-sm-4 mui-col-xs-4">
+			    	<button>课程类型</button>
+			    	<a class="mui-icon mui-icon-arrowdown"></a>
+			    </div>
+			    <div class="mui-col-sm-4 mui-col-xs-4">
+			    	<button class="">老师</button>
+			    	<a class="mui-icon mui-icon-arrowdown"></a>
+			    </div>
+			    <div class="mui-col-sm-4 mui-col-xs-4">
+			    	<button class="">教室</button>
+			    	<a class="mui-icon mui-icon-arrowdown"></a>
+			    </div>
+			</div>
+			 <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    		<div id="main" style="width: 6000px;height:300px;"></div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script src="../js/immersed.js"></script>
+		<script src="../js/common_click.js"></script>
+		<script src="../js/ECharts/echarts.min.js"></script>
+		<script src="../js/clue.js" ></script>
+	</body>
+</html>

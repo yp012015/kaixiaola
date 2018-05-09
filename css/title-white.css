@@ -1,0 +1,18 @@
+body,.mui-bar,.mui-content{background-color: white;}
+.mui-bar-nav{box-shadow: none;border-bottom: 1px solid #EEEEEE;}
+.mui-btn-block.mui-btn{padding:10px 0;margin-top: 20px;margin-left: 5%;margin-right: 5%;width: 90%;font-size: 15px;}
+.division{margin: 0 auto;position: relative;text-align: center;}
+.division:before{
+	content: "";
+	border-top: 1px solid #ededed;
+	display: block;
+	position: absolute;
+	top: 10px; width: 80px;left: 0;
+}
+.division:after{
+	content: "";
+	border-top: 1px solid #ededed;
+	display: block;
+	position: absolute;
+	top: 10px; width: 80px;right: 0;
+}

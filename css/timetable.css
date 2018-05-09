@@ -1,0 +1,30 @@
+#btn-add-title{font-size: 30px;font-weight: bold;padding-top: 7px;}
+#datePicker{background-color: #1891ee;margin: 7px 15%;height: 30px;position: relative;}
+#btnDate{background: none;border: none;color: white;font-size: 12px;margin-right: 15px;}
+#datePicker .mui-icon-arrowdown{color: white;position: absolute;font-size: 15px;right: 10px;bottom: 7px;} 
+/*+号弹窗内容*/
+#topPopover {
+	position: fixed;
+	top: 60px !important;
+	right: 50px !important;
+	height: 100px;width: 145px;
+	background-color: rgba(0,0,0,0.7);
+}
+#topPopover a>img{height: 22px;width: 22px;}
+#topPopover .mui-popover-arrow {
+	left: auto;
+	right: 6px;
+}
+.mui-popover .mui-scroll .mui-table-view-cell>a.mui-active{
+	background-color: #000000;
+}
+.mui-popover .mui-table-view{background-color: transparent;color: white;}
+.mui-popover .mui-table-view .mui-pull-left{margin: 0;}
+.mui-popover .mui-popover-arrow:after{background-color: rgba(0,0,0,0.7);}
+.mui-popover .mui-table-view p.popover-item{color: white;margin-left: 15px;}
+/*课程筛选头部*/
+.condition{text-align: center;background-color: white;}
+.condition button{font-size: 12px;border: none;background: none;color: #777;padding-right: 0;}
+.condition .mui-icon.mui-icon-arrowdown{color: #777;font-size: 15px;margin-top: 7px;}
+/*添加竖线分割*/
+.condition .mui-col-sm-4:nth-child(2),.condition .mui-col-sm-4:nth-child(3){border-left: 1px solid lightgray;}

@@ -1,0 +1,15 @@
+html,body{height: 100%;}
+.mui-content{background-color: #eee;height: 100%;}
+.logo-bottom{
+	font-size: 12px;color: #ccc;margin-top: 15px;width: 200px;
+}
+.division:before,.division:after{width: 30px;border-top-color: #CCCCCC;}
+.ul-pwd{margin-top: 10px;}
+.mui-table-view .mui-table-view-cell>a{margin: -7px -15px;font-size: 14px;}
+/*去除列表的顶部、底部横线*/
+.mui-table-view:before,.mui-table-view:after{background:none;}
+.mui-table-view-cell>a.update-version{display: inline;}
+.mui-content .mui-table-view:nth-child(1){margin-top: 0;}
+.card{margin-top: 10px;}
+.mui-media-object{margin-right: 20px;}
+.mui-title{color: dimgray;}

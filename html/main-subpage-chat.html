@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>主页-消息</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/app.css">
+		<style>
+			html,body {
+				background-color: #efeff4;
+			}
+			 .oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				position: relative;
+				margin: -11px 0;
+			}
+	
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				border-radius: 50%;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+			.mui-content>.mui-table-view:first-child{
+				margin-top: 0;
+			}
+			.oa-contact-position{position: absolute;right: 0;}
+			.mui-table-view-cell{padding: 7px 15px;}
+			.oa-contact-name{font-size: 14px;}
+			.oa-contact-avatar>img{line-height: 1;height: 50px;}
+			.oa-contact-avatar .msg-count{
+				position: absolute;right: 10px;top: 10px;
+				border-radius: 50%;
+				height: 15px;width: 15px;
+				padding: 0;
+				vertical-align: middle;
+				text-align: center;
+				line-height: 15px;
+				font-size: 11px;
+			}
+			.mui-pull-left,.mui-pull-right{
+				margin: 11px 10px;height: 22px;width: 22px;
+				background-position: center;
+				background-size: cover;
+			}
+			.btn1{background-image: url(../img/txc_ic_message_online.png);}
+			.btn2{background-image: url(../img/txc_ic_main_message_contact.png);}
+			.btn3{background-image: url(../img/txc_ic_main_message_history.png);}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 id="title" class="mui-title">消息</h1>
+			<a class="mui-pull-left btn1"></a>
+			<a class="mui-pull-right btn2"></a>
+			<a class="mui-pull-right btn3"></a>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+				<li class="mui-table-view-cell">
+					<a href="javascript:;"></a>
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="../img/avatar1.jpeg" />
+								<span class="mui-badge mui-badge-red msg-count">24</span>
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">Lay 主管</h4>
+									<span class="oa-contact-position mui-h6">17/9/11</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									[跟进记录]学员测试1
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:;"></a>
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="../img/avatar2.jpg" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">艾AA</h4>
+									<span class="oa-contact-position mui-h6">17/2/16</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									aaa@163.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:;"></a>
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="../img/avatar3.jpg" />
+								<span class="mui-badge mui-badge-red msg-count">6</span>
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">罗辑</h4>
+									<span class="oa-contact-position mui-h6">刚刚</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									luoji@126.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:;"></a>
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="../img/avatar4.jpg" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">云天明</h4>
+									<span class="oa-contact-position mui-h6">3分钟前</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									ytm@163.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:;"></a>
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="../img/avatar5.jpg" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">史强</h4>
+									<span class="oa-contact-position mui-h6">昨天</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									shiqiang@gmail.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:;"></a>
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="../img/avatar6.jpg" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">叶文洁</h4>
+									<span class="oa-contact-position mui-h6">17/9/11</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									yewenjie@sina.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:;"></a>
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="../img/avatar7.jpg" />
+								<span class="mui-badge mui-badge-red msg-count">2</span>
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">艾AA</h4>
+									<span class="oa-contact-position mui-h6">17/2/16</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									aaa@163.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:;"></a>
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="../img/avatar8.jpg" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">罗辑</h4>
+									<span class="oa-contact-position mui-h6">刚刚</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									luoji@126.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="javascript:;"></a>
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img src="../img/avatar9.png" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">云天明</h4>
+									<span class="oa-contact-position mui-h6">3分钟前</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									ytm@163.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script src="../js/jquery-1.11.0.js"></script>
+	<script src="../js/immersed.js"></script>
+	<script type="text/javascript">
+		mui('.mui-table-view').on('tap','.mui-table-view-cell',function(){
+			//获取好友名称
+			var nickname = $(this).find(".oa-contact-name").text();
+			mui.openWindow('chat.html','chat.html',{
+				extras:{
+					nickname:nickname
+				}
+			});
+		}) 
+	</script>
+</html>

@@ -1,0 +1,147 @@
+.mui-content>.mui-table-view:first-child{margin-top:0;}
+.head-title{
+	text-align: center;height: 40px;width: 100%;
+	background-color: #1891ee;position: fixed;
+	z-index: 8;
+}
+.title-txt{color: white;line-height: 40px;font-size: 18px;}
+#btn-add-title{
+	color: white;font-size: 36px;position: absolute; 
+	right: 15px;font-weight: 500;
+}
+/*去除顶部4宫格边框*/
+.mui-grid-view.mui-grid-9.head{background-color: #1891ee;border: none;}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell{border: none;}
+/*顶部4宫格边框字体颜色*/
+.mui-table-view.mui-grid-view.head .mui-table-view-cell .mui-media-body{
+	color: white;
+}
+.mui-table-view.mui-grid-view.head .mui-table-view-cell .mui-icon{
+	height: 40px;width: 40px;
+	background-position: center;
+	background-size: cover;
+}
+.mui-grid-9.head .mui-table-view-cell.mui-active .mui-media-body{
+	color: lightgrey;
+}
+/*线索*/
+.mui-table-view.mui-grid-view .mui-table-view-cell .icon-clue{
+	background-image: url(../img/tx_ic_work_clue_normal.png);
+}
+.mui-grid-9.head .mui-table-view-cell.mui-active .icon-clue{
+	background-image: url(../img/tx_ic_work_clue_selected.png);
+}
+/*学员*/
+.mui-table-view.mui-grid-view .mui-table-view-cell .icon-students{
+	background-image: url(../img/tx_ic_work_students_normal.png);
+}
+.mui-grid-9.head .mui-table-view-cell.mui-active .icon-students{
+	background-image: url(../img/tx_ic_work_students_selected.png);
+}
+/*老师*/
+.mui-table-view.mui-grid-view .mui-table-view-cell .icon-teacher{
+	background-image: url(../img/tx_ic_work_teacher_normal.png);
+}
+.mui-grid-9.head .mui-table-view-cell.mui-active .icon-teacher{
+	background-image: url(../img/tx_ic_work_teacher_selected.png);
+}
+/*教室*/
+.mui-table-view.mui-grid-view .mui-table-view-cell .icon-classroom{
+	background-image: url(../img/tx_ic_work_classroom_normal.png);
+}
+.mui-grid-9.head .mui-table-view-cell.mui-active .icon-classroom{
+	background-image: url(../img/tx_ic_work_classroom_selected.png);
+}
+/*中间宫格*/
+.mui-grid-view.mui-grid-9.body{background-color: white;border: none;}
+.mui-grid-view.mui-grid-9.body .mui-media .mui-icon{
+	font-size: 2rem;
+}
+.mui-table-view.mui-grid-view.body .mui-table-view-cell .mui-media-body{
+	font-size: 13px;
+}
+.mui-grid-view.mui-grid-9.body .mui-table-view-cell{padding: 0 15px;}
+.line-gray{background-color: #edf5f6;height: 10px;}
+.data-count{height: 60px;}
+.students-total{width: 50%;float: left;height: 100%;position: relative;padding: 5px 10px;}
+.income-total{width: 50%;float: left;height: 100%;position: relative;padding: 5px 10px;}
+.total-name{color: dimgray;font-size: 13px;}
+.total-value{
+	position: absolute;top: 50%;
+	left: 50%; 
+	transform: translateX(-50%); 
+	-webkit-transform: translateX(-50%);
+	color: #1891ee;font-size: 20px;
+}
+.line-vertical{width: 1px; height: 80%;position: absolute;
+	top: 10%;bottom: 10%;right: 0;background-color: lightgray;
+}
+/*设班*/
+.mui-table-view-cell>a>.mui-icon-home{color: #e4b169;}
+/*报名*/
+.mui-table-view-cell>a>.mui-icon-compose{color: #2b8bca;}
+/*排课*/
+.mui-table-view-cell>a>.mui-icon-mic{color: #2b8bca;}
+/*课表*/
+.mui-table-view-cell>a>.mui-icon-bars{color: #2b8bca;}
+
+/*签到*/
+.mui-table-view-cell>a>.mui-icon-flag{color: #2b8bca;}
+/*资金*/
+.mui-table-view-cell>a>.mui-icon-phone{color: #2b9b87;}
+/*评价*/
+.mui-table-view-cell>a>.mui-icon-star{color: #e4b169;}
+/*今日待办*/
+.mui-table-view-cell>a>.mui-icon-search{color: #e4b169;}
+
+/*微直播*/
+.mui-table-view-cell>a>.mui-icon-videocam{color: #dd7370;}
+/*微信管家*/
+.mui-table-view-cell>a>.mui-icon-weixin{color: #2b8bca;}
+/*微官网*/
+.mui-table-view-cell>a>.mui-icon-pengyouquan{color: #2b8bca;}
+/*全部*/
+.mui-table-view-cell>a>.mui-icon-paperclip{color: #2b9b87;}
+img{height: auto;width: 100%;}
+.mui-bar-nav~.mui-content{padding-top: 40px;}
+.mui-content{z-index: 9;}
+.mui-bar-nav{box-shadow: none;-webkit-box-shadow: none;background-color: #1891ee;opacity: 0;}
+.mui-pull-left{
+	margin: 11px 10px;height: 22px;width: 22px;
+	background-position: center;
+	background-size: cover;
+}
+.btn1{background-image: url(../img/tx_ic_work_small_clue_normal.png);}
+.btn2{background-image: url(../img/tx_ic_work_small_students_normal.png);}
+.btn3{background-image: url(../img/tx_ic_work_small_teacher_normal.png);}
+.btn4{background-image: url(../img/tx_ic_work_small_classroom_normal.png);}
+
+.btn1:active{background-image: url(../img/tx_ic_work_small_clue_selected.png);}
+.btn2:active{background-image: url(../img/tx_ic_work_small_students_selected.png);}
+.btn3:active{background-image: url(../img/tx_ic_work_small_teacher_selected.png);}
+.btn4:active{background-image: url(../img/tx_ic_work_small_classroom_selected.png);}
+.mui-bar .mui-icon.btn5{
+	color: white; font-size: 36px; font-weight: 500;
+	padding-top: 0;padding-bottom: 0;padding-right: 15px;
+}
+/*取消【线索】、【学员】、【老师】、【教室】栅格的默认点击变色效果*/
+.mui-grid-9.head .mui-table-view-cell.mui-active{background-color: #1891ee;}
+/*+号弹窗内容*/
+#topPopover {
+	position: fixed;
+	top: 60px !important;
+	right: 50px !important;
+	height: 230px;width: 145px;
+	background-color: rgba(0,0,0,0.7);
+}
+#topPopover .mui-popover-arrow {
+	left: auto;
+	right: 6px;
+}
+.mui-popover .mui-scroll .mui-table-view-cell>a.mui-active{
+	background-color: #000000;
+}
+.mui-popover .mui-table-view{background-color: transparent;color: white;}
+.mui-popover .mui-table-view .mui-pull-left{margin: 0;}
+.mui-popover .mui-popover-arrow:after{background-color: rgba(0,0,0,0.7);}
+.mui-popover .mui-table-view p.popover-item{color: white;margin-left: 15px;}

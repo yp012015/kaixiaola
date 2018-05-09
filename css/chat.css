@@ -1,0 +1,161 @@
+html,body,.mui-content{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: #F5F5F5;
+	overflow: hidden;
+	-webkit-user-select: none;
+}
+/*聊天记录的整个父容器*/
+.mui-content{height: 100%;}
+/*聊天气泡列表的父容器*/
+.chat-list{
+	height: 100%;
+	padding-bottom: 50px;
+	overflow: auto;
+	-webkit-user-select: auto;
+}
+/*.chat-box{max-width: 80%;}*/
+
+.chat-box.chat-box-left{float: left;}
+.chat-box.chat-box-right{float: right;}
+
+/*聊天头像*/
+.chat-box .chat-head{
+	height: 40px;
+	width: 40px;
+}
+/*聊天内容*/
+.chat-content{
+	padding: 10px;
+	border-radius: 3px;
+	max-width: 80%;
+	min-width: 35px;
+	position: relative;
+}
+/*强制聊天文本换行*/
+.chat-content-inner{
+	word-break: break-word;
+}
+/*清除浮动*/
+.clear-float{clear: both;}
+.chat-box{clear: both;width: 100%;}
+/*左头像*/
+.chat-box-left .chat-head{float: left}
+/*左气泡*/
+.chat-box-left .chat-content{float: left;margin-left: 15px;background-color: white;}
+/*左气泡小箭头*/
+.chat-box-left .chat-content-arrow{
+	height: 10px;width: 10px;
+	background-color: white;
+	border: solid white 1px;
+}
+/*左气泡小箭头，隐藏top,right边，然后沿Z轴旋转45度*/
+.chat-box-left .chat-content-arrow{
+	border-top: hidden;
+	border-right: hidden;
+	transform: rotateZ(45deg);
+	-webkit-transform: rotateZ(45deg);
+	position: absolute;
+	top: 12px;
+	left: -5px;
+}
+
+/*右头像*/
+.chat-box-right .chat-head{float:right}
+/*右气泡*/
+.chat-box-right .chat-content{float:right;margin-right:15px;background-color: #1891ee;color: white;}
+/*右气泡小箭头*/
+.chat-box-right .chat-content-arrow{
+	height: 10px;width: 10px;
+	background-color: #1891ee;
+}
+/*右气泡小箭头，隐藏top,right边，然后沿Z轴旋转45度*/
+.chat-box-right .chat-content-arrow{
+	border-bottom: hidden;
+	border-left: hidden;
+	transform: rotateZ(45deg);
+	-webkit-transform: rotateZ(45deg);
+	position: absolute;
+	top: 12px;
+	right: -5px;
+}
+/*聊天时间父容器*/
+.chat-box-time{
+	text-align: center;
+	margin: 15px 0;
+}
+/*聊天时间文本*/
+.chat-time{
+	font-size: 12px;
+	color: white;
+	background-color: #D8D8D8;
+	border-radius: 3px;
+	padding: 3px 5px;
+}
+/*顶部输入框父容器*/
+footer{
+	height: 50px;
+	min-height: 50px;
+	width: 100%;
+	background: white;
+	position:fixed;
+	left: 0;
+	bottom: 0;
+	padding: 0 80px 0 40px;
+}
+.footer-left{
+	height: 100%;width: 40px;
+	position: absolute;
+	left: 0; top: 0;
+}
+.footer-center{
+	height: 100%;
+	padding: 8px 0;
+}
+.footer-right{
+	height: 100%;width: 80px;
+	position: absolute;
+	right: 0; top: 0;
+}
+/*设置底部输入框图标的样式*/
+.mui-icon.iconfont{
+	font-size: 28px; 
+	padding: 11px 4px; 
+	text-align: center;
+}
+.input-text{
+	text-align: left;
+	height: 100%;
+	width: 100%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: solid #DDD 1px;
+	border-radius: 0;
+	overflow: hidden;
+	font-size: 16px;
+	line-height: 17px;
+}
+.input-text:focus{border-bottom-color: #1891ee;}
+#btnSend{
+	height: 32px;width: 50%;
+	margin: 9px 3px;
+	padding: 0;
+	font-size: 13px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+	color: #1891ee;
+	border-color: #1891ee;
+}
+#btn-speek{width: 100%;display: none;}
+.div-audio{text-align: right;}
+.chat-content-inner .div-audio .mui-icon{color: white;}
+.audio-duration{
+	float: right;margin-top: 10px; margin-right: 10px;
+	color: #aaa;font-size: 14px;
+}
+.mui-icon.icon-bofang{padding: 0;font-size: 20px;}
+.me-speek{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg);}

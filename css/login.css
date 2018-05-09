@@ -1,0 +1,28 @@
+/*修改输入框的默认提示字体--start--*/
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ccc; opacity:1; font-size: 15px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #ccc;opacity:1; font-size: 15px;
+}
+
+input:-ms-input-placeholder{
+    color: #ccc;opacity:1; font-size: 15px;
+}
+
+input::-webkit-input-placeholder{
+    color: #ccc;opacity:1; font-size: 15px;
+}
+/*修改输入框的默认提示字体--end--*/
+.mui-bar-nav~.mui-content{padding-top: 50px;}
+.bottom-line{
+	height: 1px; margin-left: 15px; background-color: lightgray;
+}
+/*错误信息提示*/
+#errorMsg{margin-left: 5%;color: red;display: none;}
+.div-padding{margin-top: 30px;}
+.div-padding .mui-btn{width: 100%;padding: 8px 0;font-size: 16px;}
+.div-bottom{text-align: center;}
+.div-bottom span{font-size: 13px;color: dodgerblue;padding: 0 5px;}
+.div-bottom p{display: inline;background-color: dodgerblue;padding-left: 1px;font-size: 8px;line-height: 1;vertical-align: middle;}

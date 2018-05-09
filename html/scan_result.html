@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>扫码结果</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" /> 
+		<link href="../css/mui.min.css" rel="stylesheet" /> 
+		<!--<link href="../css/app.css" rel="stylesheet" />--> 
+		<style type="text/css">
+			.mui-content{
+				position: absolute;
+				top: 50%;left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">扫码结果</h1>
+		</header>-->
+		<div class="mui-content">
+		    <!--<img src="../img/txe_ic_img_loading.png"/>-->
+		    <p style="font-size: 20px;margin-top: 20px;">请稍后……</p>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script src="../js/immersed.js"></script>
+		
+		<script type="text/javascript">
+			var scanHtml = null;
+			mui.init({
+				beforeback:function(){
+					//显示主页
+					plus.webview.currentWebview().close();
+//					var w = plus.webview.getWebviewById("main");
+//					plus.webview.show(w); // 显示窗口
+					plus.webview.show(scanHtml); // 显示窗口
+					return false;
+				}
+			});
+			// 扩展API加载完毕后调用onPlusReady回调函数
+			document.addEventListener("plusready", onPlusReady, false);
+			function onPlusReady() {
+				//获取扫描结果
+				var result = plus.webview.currentWebview().result;
+				$("p").text(result);
+				//隐藏扫描页面
+				scanHtml = plus.webview.getWebviewById("scan.html");
+				plus.webview.hide(scanHtml);
+			}
+		</script>
+	</body>
+
+</html>

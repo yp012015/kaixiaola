@@ -1,0 +1,52 @@
+/*【工作】选中时的图标*/
+.mui-tab-item.mui-active .icon-home{
+	background-image: url(../img/tx_ic_tab_work_selected.png);
+	background-position: center;
+	background-size: cover;
+	content: 1;
+}
+/*【工作】未选中时的图标*/
+.mui-tab-item .icon-home{
+	background-image: url(../img/tx_ic_tab_work_normal.png);
+	background-position: center;
+	background-size: cover;
+	content: 1;
+}
+/*【消息】选中时的图标*/
+.mui-tab-item.mui-active .icon-email{
+	background-image: url(../img/tx_ic_tab_message_selected.png);
+	background-position: center;
+	background-size: cover;
+	content: 1;
+}
+/*【消息】未选中时的图标*/
+.mui-tab-item .icon-email{
+	background-image: url(../img/tx_ic_tab_message_normal.png);
+	background-position: center;
+	background-size: cover;
+}
+/*【仪表盘】选中时的图标*/
+.mui-tab-item.mui-active .icon-data{
+	background-image: url(../img/tx_ic_tab_dashboard_selected.png);
+	background-position: center;
+	background-size: cover;
+}
+/*【仪表盘】未选中时的图标*/
+.mui-tab-item .icon-data{
+	background-image: url(../img/tx_ic_tab_dashboard_normal.png);
+	background-position: center;
+	background-size: cover;
+}
+/*【我】选中时的图标*/
+.mui-tab-item.mui-active .icon-gear{
+	background-image: url(../img/tx_ic_tab_mine_selected.png);
+	background-position: center;
+	background-size: cover;
+}
+/*【我】未选中时的图标*/
+.mui-tab-item .icon-gear{
+	background-image: url(../img/tx_ic_tab_mine_normal.png);
+	background-position: center;
+	background-size: cover;
+}
+.mui-tab-label{line-height: 1.1;}

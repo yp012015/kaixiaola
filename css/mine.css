@@ -1,0 +1,38 @@
+.mui-icon{color: white;}
+.mui-icon:active{color: lightyellow;}
+/*从左到右颜色线性渐变#40d0f3 #018ff3*/
+.user-info{
+	background: -webkit-linear-gradient(left, #40d0f3 , #018ff3); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #40d0f3, #018ff3); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #40d0f3, #018ff3); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #40d0f3 , #018ff3); /* 标准的语法 */
+   	text-align: center;
+   	padding-top: 10pxf;
+}
+.mui-bar-nav{
+	background: -webkit-linear-gradient(left, #40d0f3 , #018ff3); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #40d0f3, #018ff3); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #40d0f3, #018ff3); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #40d0f3 , #018ff3); /* 标准的语法 */	
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.user-info img{height: 50px;width: 50px;}
+.user-info p{color: white;line-height: 1.5;margin-bottom: 0;}
+.user-info .user-name{font-size: 16px;margin-bottom: 5px;}
+.school-name,.user-tel{font-size: 12px;}
+.user-info-text{
+	background-image: url(../img/tx_ic_bottom_bg.png);
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 10px;
+}
+.mui-content>.mui-table-view:first-child{margin-top: 0;}
+.mui-table-view .mui-media-body{
+	height: 42px;line-height: 42px;
+}
+.body-list2{margin-top: 15px;}
+.mui-content{background-color: #edf5f6;}
+/*去掉扫一扫下面的横线*/
+.mui-table-view:before,.mui-table-view:after{background: none;}
+.body-list1 .mui-table-view-cell,.body-list2 .mui-table-view-cell{padding: 13px 15px;}

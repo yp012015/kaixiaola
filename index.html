@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.welcome-top{
+				height: 148px;width: 103px;top: 100px;
+				position: absolute;left: 50%;
+				transform: translateX(-50%);
+				-webkit-transform: translateX(-50%);
+			}
+			.txt{
+				/*水平居中*/
+				width: 100%;text-align: center;
+				bottom: 60px;position: absolute;
+			}
+			.p1{margin-bottom: 0;font-size: 16px;}
+			.p2{margin-bottom: 0;color: #1891ee;font-size: 12px; letter-spacing: 12px;}
+		</style>
+	</head>
+
+	<body>
+		<img src="img/tx_ic_welcome_top_logo.png" class="welcome-top"/>
+		<div class="txt">
+			<p class="p1">好学校,&nbsp;&nbsp;&nbsp;从这里开始&nbsp;&nbsp;&nbsp;</p>
+			<p class="p2">TIANXIAO</p>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				preloadPages:[
+					{
+						url: "html/scan.html",
+						id: "scan.html"
+					}
+				]
+			});
+//			mui.init();
+			mui.plusReady(function() {
+				/**
+				 * 获取本地存储中launchFlag的值
+				 * http://www.html5plus.org/doc/zh_cn/storage.html#plus.storage.getItem
+				 * 若存在，说明不是首次启动，直接进入首页；
+				 * 若不存在，说明是首次启动，进入引导页；
+				 */
+				/*var launchFlag = plus.storage.getItem("launchFlag1");
+				if(launchFlag) {
+					mui.openWindow({
+						url: "main.html",
+						id: "main",
+						extras: {
+							mark: "index" //额外的参数，仅仅是个标识，实际开发中不用；
+						}
+					});
+				} else {
+					mui.openWindow({
+						url: "html/guide.html",
+						id: "guide",
+						waiting:{
+							autoShow:false
+						}
+					});
+				}*/
+				mui.openWindow({
+					url: "main.html",
+					id: "main",
+					show:{
+						autoShow:false//禁止打开的页面自动加载
+					},
+					waiting:{
+						autoShow:false//不显示菊花框
+					}
+				});
+				setTimeout(function(){
+					//关闭当前页面
+					plus.webview.currentWebview().close();
+				},5000);
+			});
+		</script>
+	</body>
+
+</html>

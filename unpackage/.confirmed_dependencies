@@ -1,0 +1,250 @@
+{
+	"index.html": {
+		"href": "index.html",
+		"resources": [
+			"css/mui.min.css",
+			"js/mui.min.js",
+			"img/tx_ic_welcome_top_logo.png"
+		],
+		"refer": [
+			"main.html",
+			"html/guide.html",
+			"html/scan.html"
+		],
+		"priority": 0
+	},
+	"main.html": {
+		"resources": [
+			"main-subpage-job.html",
+			"fonts/mui.ttf",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"html/main-subpage-job.html",
+			"img/tx_ic_tab_mine_selected.png",
+			"img/tx_ic_tab_dashboard_selected.png",
+			"css/main.css",
+			"img/tx_ic_tab_message_selected.png",
+			"img/tx_ic_tab_work_normal.png",
+			"img/tx_ic_tab_dashboard_normal.png",
+			"img/tx_ic_tab_mine_normal.png",
+			"img/tx_ic_tab_message_normal.png",
+			"img/tx_ic_tab_work_selected.png",
+			"js/jquery-1.11.0.js",
+			"js/immersed.js",
+			"html/main-subpage-chat.html"
+		],
+		"refer": [
+			"main-subpage-job.html",
+			"main-subpage-data.html",
+			"main-subpage-chat.html",
+			"main-subpage-mine.html",
+			"html/main-subpage-data.html",
+			"html/main-subpage-chat.html",
+			"html/main-subpage-mine.html",
+			"html/main-subpage-job.html"
+		]
+	},
+	"main-subpage-job.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"main-subpage-chat.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"html/main-subpage-data.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"css/app.css",
+			"js/immersed.js",
+			"js/jquery-1.11.0.js",
+			"img/txns_ic_basic_info.png",
+			"img/txc_ic_wechat_reply.png",
+			"img/txc_ic_wechat_public.png",
+			"img/txp_ic_customer.png",
+			"img/txns_ic_website_management.png"
+		],
+		"refer": [
+			"html/test.html"
+		]
+	},
+	"html/main-subpage-mine.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/jquery-1.11.0.js",
+			"js/immersed.js",
+			"css/app.css",
+			"img/txp_ic_scan_it.png",
+			"img/tx_ic_bottom_bg.png",
+			"css/mine.css",
+			"img/txp_ic_help.png",
+			"img/tx_ic_settings.png",
+			"img/txp_ic_feedback.png",
+			"img/tx_ic_two_dimen_bar.png",
+			"img/avatar3.jpg",
+			"img/txp_ic_customer.png",
+			"js/common.js"
+		],
+		"refer": [
+			"html/test.html",
+			"html/scan.html",
+			"html/feedback.html",
+			"html/setting.html",
+			"html/barcode.html"
+		]
+	},
+	"html/main-subpage-chat.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/app.css",
+			"js/immersed.js",
+			"js/jquery-1.11.0.js",
+			"img/avatar9.png",
+			"img/avatar1.jpeg",
+			"img/avatar10.png",
+			"img/avatar5.jpg",
+			"img/avatar8.jpg",
+			"img/avatar3.jpg",
+			"img/avatar2.jpg",
+			"img/avatar6.jpg",
+			"img/avatar4.jpg",
+			"img/avatar7.jpg",
+			"img/txc_ic_message_online.png",
+			"img/txc_ic_main_message_history.png",
+			"img/txc_ic_main_message_contact.png",
+			"js/common.js"
+		],
+		"refer": [
+			"html/test.html",
+			"html/chat.html"
+		]
+	},
+	"html/main-subpage-job.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf",
+			"css/main-job.css",
+			"img/tx_ic_work_students_normal.png",
+			"img/tx_ic_work_clue_normal.png",
+			"img/tx_ic_work_classroom_normal.png",
+			"img/tx_ic_work_teacher_normal.png",
+			"img/main_job_adv.jpg",
+			"js/jquery-1.11.0.js",
+			"js/home.js",
+			"img/tx_ic_work_small_classroom_normal.png",
+			"img/tx_ic_work_small_teacher_normal.png",
+			"img/tx_ic_work_small_students_normal.png",
+			"img/tx_ic_work_small_clue_normal.png",
+			"js/immersed.js",
+			"img/tx_ic_work_clue_selected.png",
+			"img/tx_ic_work_popup_menu_group_wechat.png",
+			"img/tx_ic_work_popup_menu_write_record.png",
+			"img/tx_ic_work_popup_menu_new_day_plan.png",
+			"img/tx_ic_work_popup_menu_scan_it.png",
+			"img/tx_ic_work_popup_menu_add_trainee.png",
+			"html/test.html",
+			"img/tx_ic_work_classroom_selected.png",
+			"js/common.js",
+			"img/tx_ic_work_students_selected.png"
+		],
+		"refer": [
+			"html/test.html",
+			"html/scan.html",
+			"html/timetable.html"
+		]
+	},
+	"html/guide.html": {
+		"refer": [
+			"main.html",
+			"login.html"
+		],
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"img/txa_bg_login_guide_1.png",
+			"img/txa_bg_login_guide.jpg",
+			"img/txa_bg_login_guide_2.png",
+			"img/txa_bg_login_guide_3.png"
+		]
+	},
+	"login.html": {
+		"resources": [
+			"css/login.css",
+			"css/app.css",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/jquery-1.11.0.js",
+			"js/login.js",
+			"fonts/mui.ttf",
+			"js/immersed.js"
+		],
+		"refer": [
+			"main.html"
+		]
+	},
+	"html/test.html": {
+		"resources": [
+			"img/txe_ic_img_loading.png",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/immersed.js",
+			"css/app.css",
+			"js/jquery-1.11.0.js"
+		]
+	},
+	"html/scan.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/scan.js",
+			"js/immersed.js",
+			"js/jquery-1.11.0.js",
+			"css/app.css",
+			"fonts/mui.ttf",
+			"img/ic_flash_closed.png",
+			"img/ic_flash_opened.png"
+		],
+		"refer": [
+			"html/scan_result.html"
+		]
+	},
+	"html/chat.html": {
+		"resources": [
+			"fonts/iconfont.css",
+			"js/chat.js",
+			"fonts/iconfont.woff",
+			"css/chat.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/avatar10.png",
+			"js/immersed.js",
+			"js/jquery-1.11.0.js",
+			"css/app.css"
+		]
+	},
+	"html/timetable.html": {
+		"refer": [
+			"html/test.html"
+		]
+	},
+	"html/scan_result.html": {
+		"refer": [
+			"html/scan.html"
+		]
+	}
+}

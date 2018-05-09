@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<style>
+			#close {
+				position: absolute;
+				width: 160px;
+				left: 50%;
+				margin-left: -80px;
+				bottom: 15%;
+				padding: 10px;
+				color: #fff;
+				border-color: #fff;
+			}
+			.mui-slider-item{
+				background-position: center;
+				background-size: cover;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="slider" class="mui-slider mui-fullscreen" style="background-image: url(../img/txa_bg_login_guide.jpg);">
+			<div class="mui-slider-group">
+				<!-- 第一张 -->
+				<div class="mui-slider-item" style="background-image: url(../img/txa_bg_login_guide_1.png);">
+					
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item" style="background-image: url(../img/txa_bg_login_guide_2.png);">
+					
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item" style="background-image: url(../img/txa_bg_login_guide_3.png);">
+					<div class="animate">
+						<button id='close' class="mui-btn mui-btn-warning mui-btn-outlined">立即体验</button>
+					</div>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script>
+			mui.init({
+				preloadPages:[
+					{
+						url:"../login.html",
+						id:"login"
+					}
+				]
+			})
+			mui.back = function() {};
+			mui.plusReady(function() {
+				if(mui.os.ios){
+					plus.navigator.setFullscreen(true);
+				}
+				plus.navigator.closeSplashscreen();
+			});
+			//立即体验按钮点击事件
+			document.getElementById("close").addEventListener('tap', function(event) {
+				plus.storage.setItem("launchFlag", "true");
+				plus.navigator.setFullscreen(false);
+				plus.webview.currentWebview().close();
+				plus.webview.getWebviewById('login').show();
+			}, false);
+			//图片切换时，触发动画
+			/*document.querySelector('.mui-slider').addEventListener('slide', function(event) {
+			 	//注意slideNumber是从0开始的；
+			 	var index = event.detail.slideNumber+1;
+			 	if(index==2||index==3){
+			 		var item = document.getElementById("tips-"+index);
+			 		if(item.classList.contains("mui-hidden")){
+			 			item.classList.remove("mui-hidden");
+			 			item.classList.add("guide-show");
+			 		}
+			 	}
+			});*/
+			
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>二维码</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/title-white.css" rel="stylesheet" />
+		<style type="text/css">
+			.mui-title{color: gray;}
+			.nickname{text-align: center;font-size: 16px;color: black;margin-top: 15px;}
+			.barcode-img{height: 200px;width: 200px;}
+			.division{ margin-top: 30px; width: 240px;color: gray;font-size: 12px; }
+			.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{font-size: 13px;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">二维码</h1>
+		</header>
+		<div class="mui-content">
+		    <h5 class="nickname">瑞烨文化</h5>
+		    <div style="text-align: center;margin-top: 35px;">
+		    	<img class="barcode-img" src="../img/barcode.png" />
+		    </div>
+		    <p class="division">分享二维码</p>
+		    <ul class="share-list">
+		    </ul>
+		    <ul class="mui-table-view mui-grid-view mui-grid-9">
+			    <!--<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+			        <a href="#">
+			            <span class="mui-icon mui-icon-home"></span>
+			            <div class="mui-media-body">Home</div>
+			        </a>
+			    </li>-->
+	        </ul>
+		    
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script src="../js/immersed.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				beforeback:function(){
+					//设置状态栏的前景色为白色
+					plus.navigator.setStatusBarStyle('light');
+				}
+			});
+			var shares;
+			var list = document.getElementsByClassName("mui-grid-9")[0];
+			mui.plusReady(function(){
+				//设置状态栏的前景色为黑色
+				plus.navigator.setStatusBarStyle("dark");
+				plus.share.getServices(function(s) {
+					shares={};
+					for(var i in s){
+						var t=s[i];
+						shares[t.id]=t;
+						var item = document.createElement("li");
+				        item.setAttribute("class", "ditem mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" );
+				        item.setAttribute("onclick", "shareAction('"+t.id+"')");
+				        var spanClass = null
+				        switch (t.description){
+				        	case "新浪微博":
+				        		spanClass = "mui-icon mui-icon-weibo";
+				        		showShareList(item,spanClass,t,"新浪微博");
+				        		break;
+				        	case "腾讯微博":
+				        		spanClass = "mui-icon mui-icon-pengyouquan";
+				        		break;
+				        	case "QQ":
+				        		spanClass = "mui-icon mui-icon-qq";
+				        		showShareList(item,spanClass,t,"QQ");
+				        		break;
+				        	case "微信":
+				        		spanClass = "mui-icon mui-icon-weixin";
+				        		showShareList(item,spanClass,t,"微信");
+				        		item = document.createElement("li");
+				        		item.setAttribute("class", "ditem mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" );
+				        		item.setAttribute("onclick", "shareAction('pengyouquan')");
+				        		spanClass = "mui-icon mui-icon-pengyouquan";
+				        		showShareList(item,spanClass,t,"朋友圈");
+				        		break;
+				        	default:
+				        		break;
+				        }
+					}
+				}, function(e) {
+				    alert("获取分享服务列表失败：" + e.message);
+				});
+			})
+			/**
+			 * 显示分享列表 
+			 * @param {Object} item	DOM对象
+			 * @param {String} spanClass	<span>的类名
+			 * @param {Object} t		分享对象
+			 */
+			function showShareList(item,spanClass,t,shareName){
+				var aEle = document.createElement("a");
+		        var spanEle = document.createElement("span");
+		        spanEle.setAttribute("class",spanClass);
+		        var mediaEle = document.createElement("div");
+		        mediaEle.setAttribute("class","mui-media-body");
+		        mediaEle.innerHTML = shareName;
+		        aEle.appendChild(spanEle);
+		        aEle.appendChild(mediaEle);
+		        item.appendChild(aEle);
+		        list.appendChild(item); 
+			}
+			/**
+			 * 执行分享
+			 * @param {String} id
+			 */
+			function shareAction (id) {
+				//如果未查询到分享服务对象
+				var share = shares[id];
+				if("pengyouquan" == id)
+					share = shares["weixin"];
+				if(!share){
+					return;
+				}
+				//JSON对象，分享消息对象
+				var share_msg = {
+					content:"模仿猫眼电影的一款电影资讯App 电影介绍、预告片播放、附近影院查找",
+					pictures:["../img/barcode.png"],//(Array[ String ] 类型 )分享消息的图片
+					thumbs:["../img/barcode.png"], //(Array[ Stromg ] 类型 )分享消息的缩略图
+					href:"https://github.com/yp012015/maomovie",
+					title:"高仿猫眼电影"
+				};
+				//如果是在微信中分享，可以增加分享消息扩展参数
+				if("weixin" == id){
+					share_msg.extra={scene:"WXSceneSession"};
+				}
+				if("pengyouquan" == id){
+					share_msg.extra={scene:"WXSceneTimeline"};
+				}
+				// 发送分享
+				if(share.authenticated){
+					console.log('---已授权---');
+					shareMessage(share_msg, share);
+				}else{
+					console.log('---未授权---');
+					share.authorize(function(){
+						shareMessage(share_msg,share);
+					}, function(e){
+						console.log('认证授权失败：'+e.code+' - '+e.message);
+					});
+				}
+			}
+			/**
+	   		 * 发送分享消息
+	  	 	 * @param {JSON} msg
+	  	 	 * @param {plus.share.ShareService} s
+	   		 */
+			function shareMessage (msg, s) {
+				s.send(msg, function(){
+					console.log('分享到"'+s.description+'"成功！');
+				}, function(e){
+					console.log('分享到"'+s.description+'"失败: '+JSON.stringify(e));
+				});
+			}
+		</script>
+	</body>
+
+</html>

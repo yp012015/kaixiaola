@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>主页-仪表盘</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/app.css">
+		<style>
+			html,body {
+				background-color: #efeff4;
+			}
+			.mui-content>.mui-table-view:first-child{margin-top: 0;}
+			.mui-table-view .mui-media-body{
+				height: 42px;line-height: 42px;
+			}
+			.mui-table-view-cell{padding: 13px 15px;}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 id="title" class="mui-title">仪表盘</h1>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view">
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="../img/txns_ic_website_management.png">
+			            <div class="mui-media-body">
+			                招生漏斗图
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="../img/txp_ic_customer.png">
+			            <div class="mui-media-body">
+			                咨询来源分析表
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="../img/txc_ic_wechat_public.png">
+			            <div class="mui-media-body">
+			                微官网数据概况
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="../img/txc_ic_wechat_reply.png">
+			            <div class="mui-media-body">
+			                微官网的页面访问分析
+			            </div>
+			        </a>
+			    </li>
+			    <li class="mui-table-view-cell mui-media">
+			        <a href="javascript:;">
+			            <img class="mui-media-object mui-pull-left" src="../img/txns_ic_basic_info.png">
+			            <div class="mui-media-body">
+			                微官网课程访问Top5
+			            </div>
+			        </a>
+			    </li>
+			</ul>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script src="../js/immersed.js"></script>
+		<script src="../js/common_click.js"></script>
+	</body>
+</html>
