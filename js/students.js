@@ -66,8 +66,15 @@ mui('.mui-row').on('tap','.mui-col-sm-4.mui-col-xs-4',function(event){
 }) 
 
 mui('.student-type .mui-table-view').on('tap','.mui-table-view-cell',function(){
-	//移除之前选中的图标
-	$(".student-type .mui-table-view-cell>img").remove();
-	//在当前行加入选中图标
-  	$(this).append('<img src="../img/tx_ic_selected_blue_u2.png" class="mui-pull-right"/>');
+	updateSelected(".student-type .mui-table-view-cell>img",this);
 }) 
+mui('.class-type .mui-table-view').on('tap','.mui-table-view-cell',function(){
+	updateSelected(".class-type .mui-table-view-cell>img",this);
+}) 
+
+function updateSelected (selector,item) {
+	//移除之前选中的图标
+	$(selector).remove();
+	//在当前行加入选中图标
+  	$(item).append('<img src="../img/tx_ic_selected_blue_u2.png" class="mui-pull-right"/>');
+}

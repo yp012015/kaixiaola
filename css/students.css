@@ -20,7 +20,7 @@ body {
 .mui-table-view-cell.mui-indexed-list-item{
 	font-size: 12px;
 }
-.mui-scroll-wrapper.student-type{height: 300px;background-color: white;}
+.mui-scroll-wrapper.student-type,.mui-scroll-wrapper.class-type{height: 300px;background-color: white;}
 .mui-scroll .mui-table-view-cell{font-size: 12px;}
 .mui-scroll .mui-table-view-cell>img{height: 20px;}
 .mui-scroll .mui-table-view-cell:last-child:after{height: 1px;}
