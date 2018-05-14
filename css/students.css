@@ -1,0 +1,27 @@
+.mui-scroll-wrapper {
+	top: 74px
+}
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.mui-bar {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.condition{border-bottom: 1px solid lightgray;}
+.mui-indexed-list{height: 100%;}
+/*去除索引下表的分割线*/
+.mui-table-view-divider:before,.mui-table-view-divider:after{
+	background: none;
+}
+.mui-table-view-cell.mui-indexed-list-item{
+	font-size: 12px;
+}
+.mui-scroll-wrapper.student-type{height: 300px;background-color: white;}
+.mui-scroll .mui-table-view-cell{font-size: 12px;}
+.mui-scroll .mui-table-view-cell>img{height: 20px;}
+.mui-scroll .mui-table-view-cell:last-child:after{height: 1px;}
+.mui-scroll .mui-table-view:after{height: 0;}

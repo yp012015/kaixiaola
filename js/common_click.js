@@ -1,7 +1,7 @@
 mui.init({
 	swipeBack:true //启用右滑关闭功能
 });
-mui(".mui-table-view").on('tap','.mui-table-view-cell',function(){
+mui(".mui-table-view").on('tap','.mui-table-view-cell:not(.picker)',function(){
 	var self = $(this);
 	var url = 'test.html';
 	var id = 'test';
@@ -28,8 +28,7 @@ mui(".mui-table-view").on('tap','.mui-table-view-cell',function(){
 		return;
 	}
 	if ($("#topPopover")) {
-		$("#topPopover").fadeOut();
-		$(".mui-backdrop.mui-active").hide();
+		mui('#topPopover').popover('hide');
 	}
   	mui.openWindow({
 	    id:id,

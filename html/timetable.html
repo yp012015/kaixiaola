@@ -59,7 +59,7 @@
 			    </div>
 			</div>
 			 <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-    		<div id="main" style="width: 6000px;height:400px;"></div>
+    		<div id="main" style="width: 600px;height:400px;"></div>
 		</div>
 		<script src="../js/mui.min.js"></script>
 		<script src="../js/jquery-1.11.0.js"></script>
@@ -68,5 +68,17 @@
 		<script src="../js/ECharts/echarts.min.js"></script>
 		<script src="../js/timetable.js"></script>
 		<script src="../js/data-timetable.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				beforeback:function(){
+					//设置状态栏的前景色为白色
+					plus.navigator.setStatusBarStyle('light');
+				}
+			});
+			mui.plusReady(function(){
+				//设置状态栏的前景色为黑色
+				plus.navigator.setStatusBarStyle("dark");
+			});
+		</script>
 	</body>
 </html>

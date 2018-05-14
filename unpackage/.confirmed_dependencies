@@ -163,7 +163,8 @@
 		"refer": [
 			"html/test.html",
 			"html/scan.html",
-			"html/timetable.html"
+			"html/timetable.html",
+			"html/clue.html"
 		]
 	},
 	"html/guide.html": {
@@ -245,6 +246,11 @@
 	"html/scan_result.html": {
 		"refer": [
 			"html/scan.html"
+		]
+	},
+	"html/clue.html": {
+		"refer": [
+			"html/test.html"
 		]
 	}
 }

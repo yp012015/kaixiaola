@@ -7,6 +7,8 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link rel="stylesheet" href="../css/mui.min.css">
+		<link rel="stylesheet" href="../css/mui.picker.min.css">
+		<link rel="stylesheet" href="../css/picker.css">
 		<link rel="stylesheet" href="../css/title-white.css">
 		<link rel="stylesheet" href="../css/timetable.css">
 	</head>
@@ -15,29 +17,27 @@
 		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 		    <div class="mui-title">
 		    	<div id="datePicker">
-		    		<button id="btnDate">18年4月23日-4月29日</button>
+		    		<button id="btnDate">商业贷款</button>
 		    		<a class="mui-icon mui-icon-arrowdown"></a>
 		    	</div>
 		    </div>
-			<a id="btn-add-title" href="#topPopover" class="mui-icon mui-icon-plusempty mui-pull-right"></a>			
+			<!--<a id="btn-add-title" href="#topPopover" class="mui-icon mui-icon-plusempty mui-pull-right"></a>-->			
 		</header>
 		<div class="mui-content">
-		    <!--右上角弹出菜单-->
+			 <!--右上角弹出菜单-->
 			<div id="topPopover" class="mui-popover">
 				<div class="mui-popover-arrow"></div>
 				<div class="mui-scroll-wrapper">
 					<div class="mui-scroll">
 						<ul class="mui-table-view">
-							<li class="mui-table-view-cell">
+							<li class="mui-table-view-cell picker">
 								<a href="#">
-									<img class="mui-pull-left" src="../img/tx_ic_work_popup_menu_add_trainee.png"/>
-									<p class="popover-item mui-pull-left">添加课节</p>
+									<p class="popover-item mui-pull-left">商业贷款</p>
 								</a>
 							</li>
-							<li class="mui-table-view-cell">
+							<li class="mui-table-view-cell picker">
 								<a href="#">
-									<img class="mui-pull-left" src="../img/txe_ic_course_table_export.png"/>
-									<p class="popover-item mui-pull-left">导出课表</p>
+									<p class="popover-item mui-pull-left">公积金贷款</p>
 								</a>
 							</li>
 						</ul>
@@ -46,22 +46,23 @@
 			</div>
 			<div class="mui-row condition">
 			    <div class="mui-col-sm-4 mui-col-xs-4">
-			    	<button>课程类型</button>
+			    	<button>贷款总额</button>
+			    	<a class="mui-icon mui-icon-arrowdown"></a>
+			    </div>
+			    <div id="btn-year" class="mui-col-sm-4 mui-col-xs-4">
+			    	<button >贷款年限</button>
 			    	<a class="mui-icon mui-icon-arrowdown"></a>
 			    </div>
 			    <div class="mui-col-sm-4 mui-col-xs-4">
-			    	<button class="">老师</button>
-			    	<a class="mui-icon mui-icon-arrowdown"></a>
-			    </div>
-			    <div class="mui-col-sm-4 mui-col-xs-4">
-			    	<button class="">教室</button>
+			    	<button class="">利率</button>
 			    	<a class="mui-icon mui-icon-arrowdown"></a>
 			    </div>
 			</div>
 			 <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-    		<div id="main" style="width: 6000px;height:300px;"></div>
+    		<div id="benxi" style="width: 600px;height:600px;"></div>
 		</div>
 		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.picker.min.js"></script>
 		<script src="../js/jquery-1.11.0.js"></script>
 		<script src="../js/immersed.js"></script>
 		<script src="../js/common_click.js"></script>

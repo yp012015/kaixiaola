@@ -357,7 +357,8 @@
 				],
 				"refer": [
 					"html/scan.html",
-					"html/timetable.html"
+					"html/timetable.html",
+					"html/clue.html"
 				],
 				"priority": 0
 			},
@@ -450,6 +451,13 @@
 				"resources": [],
 				"refer": [
 					"html/scan.html"
+				],
+				"priority": 0
+			},
+			"html/clue.html": {
+				"resources": [],
+				"refer": [
+					"html/test.html"
 				],
 				"priority": 0
 			}
